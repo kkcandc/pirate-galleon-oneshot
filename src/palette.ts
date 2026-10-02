@@ -1,0 +1,27 @@
+export const palette = {
+  horizon: '#e39a6c',
+  zenith: '#121a30',
+  dusk: '#8a3d3a',
+  sun: '#ffd7a8',
+  deep: '#062228',
+  shallow: '#0e5961',
+  foam: '#f6f1e6',
+  hull: '#7a4b34',
+  hullDark: '#1c110e',
+  wale: '#100c0a',
+  copper: '#c9844a',
+  gold: '#e8c78a',
+  sail: '#f4ead8',
+  bone: '#f3ecdf',
+  flag: '#140e0c',
+  crimson: '#8e2430',
+  lantern: '#ff9a3c',
+  wood: '#8a5a3a',
+  deck: '#a9784e',
+  metal: '#2c2b2a',
+  rope: '#d7c4a4',
+  island: '#6a5646',
+  foliage: '#1d3a32',
+} as const;
+
+export const SUN_DIR = { x: -0.62, y: 0.3, z: -0.42 };
