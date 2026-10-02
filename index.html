@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#140c09" />
+    <meta
+      name="description"
+      content="Copper Wake — a procedural Three.js pirate galleon on a sunset sea. No 3D asset packs."
+    />
+    <title>Copper Wake — Procedural Galleon</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <canvas id="view" aria-label="A pirate galleon sailing on a sunset sea"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="hud">
+      <p class="eyebrow">Procedural · Three.js</p>
+      <h1>Copper Wake</h1>
+      <p class="sub">A galleon lofted from geometry, under sail on a shader sea.</p>
+      <p class="credit">Kenny Kline · kkcandc</p>
+    </header>
+    <p class="hint">Drag to look around · scroll to move closer</p>
+    <div class="controls">
+      <button id="mute" type="button" aria-pressed="true">Sound off</button>
+      <button id="mode" type="button" aria-pressed="false">Orbit</button>
+    </div>
+    <p id="fallback" hidden>This demo needs WebGL to draw the galleon.</p>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
