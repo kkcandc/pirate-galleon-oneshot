@@ -6,7 +6,9 @@ A one-shot pirate galleon: a hull lofted in TypeScript, sails and flags cut from
 
 Inspired by [Kunal Jain’s pure-code Three.js galleon](https://x.com/Kunal_Jain9/status/2100448992299794915). This scene is original.
 
-Built for Kenny Kline. The GitHub repo is [kkcandc/pirate-galleon-oneshot](https://github.com/kkcandc/pirate-galleon-oneshot). The Vercel project belongs to Kenny Kline’s personal account only.
+Built for Kenny Kline. The GitHub repo is [kkcandc/pirate-galleon-oneshot](https://github.com/kkcandc/pirate-galleon-oneshot). The Vercel project is on Kenny Kline’s personal account only.
+
+Live: [pirate-galleon-oneshot.vercel.app](https://pirate-galleon-oneshot.vercel.app)
 
 The stern nameplate reads **KLINE**.
 
