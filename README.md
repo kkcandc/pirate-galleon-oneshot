@@ -1,5 +1,7 @@
 # Copper Wake
 
+![Copper Wake, a procedural galleon under a sunset sky](docs/preview.jpg)
+
 A one-shot pirate galleon: a hull lofted in TypeScript, sails and flags cut from geometry, and a Gerstner sea written as a shader. Nothing is loaded from a 3D asset pack. Textures are painted into canvases when the page starts. Sound is optional and off until you turn it on.
 
 Inspired by [Kunal Jain’s pure-code Three.js galleon](https://x.com/Kunal_Jain9/status/2100448992299794915). This scene is original.

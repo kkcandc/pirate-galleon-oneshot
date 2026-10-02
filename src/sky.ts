@@ -27,6 +27,13 @@ void main() {
 `;
 
 const fragmentShader = /* glsl */ `
+uniform float uTime;
+uniform vec3 uSun;
+uniform vec3 uMoon;
+uniform vec3 uHorizon;
+uniform vec3 uZenith;
+uniform vec3 uDusk;
+uniform vec3 uSunColor;
 in vec3 vDir;
 out vec4 fragColor;
 

@@ -1,19 +1,18 @@
 import './style.css';
 import {
   ACESFilmicToneMapping,
-  Clock,
   Color,
   DirectionalLight,
   Fog,
   Group,
   HemisphereLight,
   Mesh,
-  PCFSoftShadowMap,
   PerspectiveCamera,
   PMREMGenerator,
   PointLight,
   Scene,
   SRGBColorSpace,
+  Timer,
   Vector2,
   WebGLRenderer,
   WebGLRenderTarget,
@@ -73,7 +72,6 @@ renderer.toneMapping = ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.05;
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, quality === 'high' ? 1.6 : 1.15));
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = PCFSoftShadowMap;
 
 const scene = new Scene();
 scene.background = new Color(palette.horizon);
@@ -197,14 +195,15 @@ const resize = () => {
 resize();
 window.addEventListener('resize', resize);
 
-const clock = new Clock();
+const timer = new Timer();
 let time = Number(params.get('t') ?? '0') || 0;
 let shown = false;
 
 const frame = () => {
   requestAnimationFrame(frame);
   if (document.hidden) return;
-  const dt = Math.min(clock.getDelta(), 0.05);
+  timer.update();
+  const dt = Math.min(timer.getDelta(), 0.05);
   time += dt * (reduceMotion ? 0.35 : 1);
   windTime.value = time;
   ship.update(time);

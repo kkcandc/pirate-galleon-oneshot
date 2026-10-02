@@ -3,6 +3,7 @@ import { palette } from './palette';
 import { SAIL_SPEED, gerstnerGlsl } from './waves';
 
 const vertexShader = /* glsl */ `
+uniform float uTime;
 out vec3 vWorld;
 out vec3 vNormal;
 out float vHeight;
@@ -24,6 +25,13 @@ void main() {
 `;
 
 const fragmentShader = /* glsl */ `
+uniform float uTime;
+uniform vec3 uSun;
+uniform vec3 uDeep;
+uniform vec3 uShallow;
+uniform vec3 uHorizon;
+uniform vec3 uFoam;
+uniform vec2 uShip;
 in vec3 vWorld;
 in vec3 vNormal;
 in float vHeight;
